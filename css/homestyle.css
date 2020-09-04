@@ -9,7 +9,7 @@ body, html {
     height: 100%;
 }
 
-.hero__Image {
+.hero__image {
     background-color: #000;
     background: url("../Photos/hero-image 2.png") no-repeat center center fixed; 
     background-size: cover;
@@ -32,24 +32,32 @@ body, html {
 .sidebar__text {
     font: Sofia Pro;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 0px;
     letter-spacing: 2px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
 
-.sidebar__dot {
-    height: 5px;
-    width: 5px;
-    background-color: #55bba6;
-    border-radius: 50%; 
+.sidebar__text::after {
+    content: "\2022";
+    color: #55bba6;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
-.hero__bar{
+ul>li:first-child:after {
+    content: none;
+}
+
+.style {
+list-style-type: none;
+}
+
+.hero__bar {
     margin-top: 20px;
     position: absolute;
     height: 4px;
@@ -136,15 +144,48 @@ body, html {
     margin-left: 15px;
 }
 
-.hero__Content {  
+.hero__content {  
     padding: 10px;
     margin-left: 15%;
     margin-top: 120px;
     position: absolute;
 }
 
-.hero__coverActions {
+.hero__actions {
     display: flex;
     flex-direction: row;
     margin-top: 60px;
+}
+
+.mission{
+    color: #55bba6;
+    font: DM Serif Display;
+    position: absolute;
+    font-size: 36px;
+    letter-spacing: 5px;
+    margin-left: 270px;
+    margin-top: 60px;
+}
+
+.mission__left{
+    font: SofiaProRegular;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 270px;
+    padding-top: 130px;
+}
+
+.mission__middle{
+    font: SofiaProRegular;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 140px;
+    padding-top: 130px;
+}
+.mission__right{
+    font: SofiaProRegular;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 140px;
+    padding-top: 130px;
 }
