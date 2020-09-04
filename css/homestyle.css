@@ -1,0 +1,187 @@
+.hero {
+    width: 100%;
+    height: 100%;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.hero__image {
+    background-color: #000;
+    background: url("../Photos/hero-image 2.png") no-repeat center center fixed; 
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #FFF;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__text {
+    font: Sofia Pro;
+    font-size: 14px;
+    line-height: 0px;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.sidebar__text::after {
+    content: "\2022";
+    color: #55bba6;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+ul>li:first-child:after {
+    content: none;
+}
+
+.style {
+    list-style-type: none;
+}
+
+.hero__bar {
+    margin-top: 20px;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: #55bba6;
+    border-radius: 20%; 
+}
+
+.hero__subtitle {   
+    margin-top: 35px;
+    font: CircularStd;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFF;
+    letter-spacing: 2px; 
+    text-transform: uppercase;  
+}
+
+.hero__title {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    letter-spacing: 19px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.hero__description {    
+    color: #FFF;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 1.72px;;
+}
+
+.hero__shape {
+    position:absolute;
+    left: 15%;
+    right: 73%;
+    top: 3%;
+    bottom: 94%;
+}
+
+.hero__mention { 
+    color: #FFF;
+    font: Sofia Pro;
+    font-size: 12px;
+    line-height: 29px ;
+    letter-spacing: 0.7px;
+    margin-top: 20px;
+}
+
+.hero__button {
+    padding-top: 10px;
+    padding-left: 10px;
+    letter-spacing: 0.7px;
+    border-radius: 0px;    
+    cursor: pointer;
+    text-align: center;
+    font: Sofia Pro;
+    font-size:20px;
+    height: 30px; 
+    color: white;  
+    text-decoration: none;
+}
+
+.hero__button--green {
+    padding-left: 45px;
+    padding-right: 45px;
+    background: #55bba6;
+    display: block;  
+    border: 2px solid #55bba6;  
+}
+
+.hero__button--white {
+    padding-left: 55px;
+    padding-right: 55px;
+    display: block;
+    border: 2px solid #FFF;
+    background: #FFFFFF20;
+    margin-left: 15px;
+}
+
+.hero__content {  
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 120px;
+    position: absolute;
+}
+
+.hero__actions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.mission__title {
+    color: #55bba6;
+    font: DM Serif Display;
+    font-size: 36px;
+    letter-spacing: 5px;
+    padding-top: 30px;
+    padding-left: 205px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mission {
+    font: SofiaProRegular;
+    font-size: 18px;
+    line-height: 30px;
+}   
+
+.mission__content {
+    padding-top: 30px; 
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 210px;
+}
+
+.mission__text{
+    padding-right: 210px;
+}
