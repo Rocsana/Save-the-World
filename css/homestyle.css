@@ -284,3 +284,69 @@ ul>li:first-child:after {
     margin-left: 80px;
     margin-top: 400px;  
 }
+ 
+@media only screen and (max-width: 768px) {
+
+    .hero__image {
+        background: url("../Photos/hero-image 2.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 125%; 
+        height: 125%;
+        background-position: 80% 50%; 
+    }
+  
+    .sidebar__text {
+        font-size: 20px;
+    }
+
+    .sidebar__text::after { 
+        font-size: 25px;
+    }
+
+    .hero__bar {
+        margin-top: 250px;
+    }
+
+    .hero__subtitle {   
+        margin-top: 265px;
+        font-size: 14px;
+    }
+
+    .hero__title { 
+        font-size: 100px;
+    }
+
+    .hero__description {    
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .hero__shape {
+        top: 6%;
+    }
+
+    .hero__mention { 
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .hero__button {
+        margin-top: 25px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .hero__button--green {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .hero__button--white {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+
+} 
