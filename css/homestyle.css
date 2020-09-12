@@ -93,7 +93,8 @@ ul>li:first-child:after {
     font-family: Sofia Pro;
     font-size: 14px;
     line-height: 29px;
-    letter-spacing: 1.72px;;
+    letter-spacing: 1.72px;
+    padding-right: 950px;
 }
 
 .hero__shape {
@@ -131,14 +132,12 @@ ul>li:first-child:after {
     padding-left: 45px;
     padding-right: 45px;
     background: #55bba6;
-    display: block;  
     border: 2px solid #55bba6;  
 }
 
 .hero__button--white {
     padding-left: 55px;
     padding-right: 55px;
-    display: block;
     border: 2px solid #FFF;
     background: #FFFFFF20;
     margin-left: 15px;
@@ -189,10 +188,10 @@ ul>li:first-child:after {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 200px;
-    margin-top: 70px;
+    justify-content: center;
     list-style-type: none;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .gallery__horizontal {
@@ -222,12 +221,12 @@ ul>li:first-child:after {
     letter-spacing: 3px;
 } 
 
-.gallery_text {
+.gallery__text {
     position: absolute;
     color: #FFF;
     font: Sofia Pro;
     padding-top: 220px;
-    padding-right: 970px;
+    padding-right: 1020px;
     padding-left: 80px;
     font-size: 18px;
     line-height: 30px;
@@ -272,8 +271,13 @@ ul>li:first-child:after {
 .gallery__list {
     list-style-type: none;
 }
+
+.gallery__shore{
+    height: 213px;
+}
+
  
-@media only screen and (max-width: 768px) {   
+ @media only screen and (max-width: 768px) and (min-width:377px) {   
     .hero__image {
         background: url("../Photos/hero-image 2.png") no-repeat;
         background-size: cover;
@@ -308,6 +312,7 @@ ul>li:first-child:after {
     .hero__description {    
         font-size: 18px;
         padding-bottom: 10px;
+        padding-right: 220px;
     }
 
     .hero__shape {
@@ -368,7 +373,7 @@ ul>li:first-child:after {
         
     }
     
-    .mission__text:last-child{
+    .mission__text:last-child {
         display: none;
     }
 
@@ -378,20 +383,13 @@ ul>li:first-child:after {
         padding-bottom: 50px;
         display: flex;
         flex-wrap: nowrap;
+        padding-top: 0px;
     }
-    
-    /* .gallery__horizontal {
-        display: flex;
-        flex-direction: row;
-    } */
-
     
     .gallery__space {
         padding-right: 5px;
     }
 
-
-    
     .gallery__mask {
         background: linear-gradient(#020024, 
         #020024);
@@ -408,7 +406,7 @@ ul>li:first-child:after {
         padding-left: 50px;
     } 
     
-    .gallery_text {
+    .gallery__text {
         padding-top: 220px;
         padding-right: 370px;
         font-size: 22px;
@@ -434,7 +432,7 @@ ul>li:first-child:after {
         display: none;
     }
 
-    .gallery__shore{
+    .gallery__shore {
         object-fit: cover;
         object-position: 10% 0;
         width: 280px;
@@ -447,5 +445,163 @@ ul>li:first-child:after {
         width: 280px;
         height: 455px;
     }
-
 } 
+
+@media only screen and (max-width: 376px) {
+    .hero__image {
+        background: url("../Photos/hero-image 2.png") no-repeat;
+        overflow-x: hidden;
+        background-position: 80% 35%; 
+    }
+
+    .hero__actions {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+    }
+    
+    .sidebar__text {  
+        letter-spacing: 1px;
+        padding-left: 0px;
+        margin-left: -15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .hero__button--white {
+        margin-top: 20px;
+        margin-left: 0px;    
+    }
+
+    
+    .hero__bar {
+        margin-top: 0px;
+    }
+
+    .hero__subtitle {   
+        margin-top: 10px;
+        font-size: 16px;
+        padding-right: 110px;
+    }
+
+    .hero__title {
+        margin-bottom: 0px;
+        margin-top: -12px;
+        font-size: 60px;
+        letter-spacing: 10px;
+        
+    }
+
+    .hero__description {    
+        font-family: Sofia Pro;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1.2px;
+        padding-right: 70px;
+        line-height: 25px;
+    }
+
+    .hero__mention { 
+        font-size: 14px;
+        padding-right: 40px;
+    }
+   
+    
+    .mission__title {
+        padding-left: 50px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mission {
+        font-size: 18px;
+        line-height: 30px;
+    }   
+
+    .mission__content {
+        padding-top: 30px; 
+        margin-left: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mission__text{
+        padding-right: 100px;
+    }
+    
+    .mission__text:last-child{
+        display: none;
+    }
+
+    .gallery {
+        margin-left: 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    
+    .gallery__space {
+        padding-right: 5px;
+    }
+
+    .gallery__mask {
+        background: linear-gradient(#020024, 
+        #020024);
+        width: 330px;
+        height: 670px;
+    }
+
+    .gallery__bar {
+        margin-left: 50px;
+    }
+    
+    .gallery__title { 
+        font-size: 40px;
+        padding-left: 50px;
+    } 
+    
+    .gallery__text {
+        padding-top: 220px;
+        padding-right: 100px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        padding-left: 50px;
+    }
+    
+    .gallery__button {
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        letter-spacing: 1.5px;
+        font-size:25px;
+        margin-left: 30px;
+        margin-top: 120%
+    }
+    
+    .gallery__button--green {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .gallery__space {
+        display: none;
+    }
+
+    .gallery__shore {
+        object-fit: cover;
+        object-position: 10% 0;
+        width: 330px;
+        height: 210px;
+    }
+
+    .gallery__sheeps {
+        object-fit: cover;
+        object-position: 55% 0;
+        width: 330px;
+        height: 455px;
+    }
+}
