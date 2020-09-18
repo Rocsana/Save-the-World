@@ -4,20 +4,54 @@
     <head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <title> Save the planet</title>
+        <script src="menu.js"></script>
         <link href="./CSS/homestyle.css" rel=stylesheet>         
     </head>
     <body>
         <section class="navbar">
-            <ul class="navbar--list">
-                <li><a href="#" class="navbar--item">Home</a></li>
-                <li> <a href="#" class="navbar--item">Story</a></li>
-                <li><a href="#" class="navbar--item">Contacte</a></li>
-                <li><a href="#" class="navbar--item">Lessons</a></li>
-                <li><a href="#" class="navbar--item">Account</a></li>
+            <ul id="dropdown" onclick="dropMenu" class="navbar__list">
+                <li ><a href="#" class="navbar__item">Home</a></li>
+                <li class="navbar__item">
+                    <div onclick="dropMenu()">Story</div>
+                    <div id="minimenu" onclick="dropMenu()" class="navbar__nodrop">
+                        <div class="dropdown__space"><a href="#" class="dropdown__line">Team</a></div>
+                        <div class="dropdown__space"><a href="#" class="dropdown__line">Project</a></div>
+                        <div class="dropdown__space"><a href="#" class="dropdown__line">Future</a></div>
+                    </div>
+                 </li>
+                <li><a href="#" class="navbar__item">Contacte</a></li>
+                <li><a href="#" class="navbar__item">Lessons</a></li>
+                <li><a href="#" class="navbar__item">Account</a></li>
             </ul>
         </section>
+        <section>  
+            <div  class="hamburger">
+                <span onclick="openMenu()" class="hamburger__btn" >&#9776;</span>
+                <ul id="content" onclick="openMenu()" class="hamburger--closed">
+                    <li><a href="#" class="hamburger__font">Home</a></li>
+                    <li><a href="#" class="hamburger__font">Story</a></li>
+                    <li><a href="#" class="hamburger__font">Contacte</a></li>
+                    <li><a href="#" class="hamburger__font">Lesssons</a></li>
+                    <li><a href="#" class="hamburger__font">Account</a></li>
+                </ul>
+        </div>      
+        </section>
+        <section>
+            <div class="slidebar">
+                <div id="btn_1" onclick="background(0)" class="slidebar__dot">
+                    <div class="slidebar__item">1</div>
+                </div>
+                <div id="btn_2" onclick="background(1)" class="slidebar__dot">
+                    <div class="slidebar__item">2</div>
+                </div>
+                <div id="btn_3" onclick="background(2)" class="slidebar__dot">
+                    <div class="slidebar__item">3</div>
+                </div>  
+            </div>
+            <script src="slideshow.js"></script>  
+        </section>
         <section class="hero">
-            <div class="hero__image">
+            <div id="backgrimg" class="hero__image">
                     <div class="hero__logo"><img  src="./Photos/Shape.png" alt="Photo of the logo" ></div> 
                 <div class="hero__content">
                     <div><span class="hero__bar"></span></div>
@@ -36,8 +70,7 @@
                     <div class="hero__actions"> 
                         <a href="#" class="hero__button hero__button--green">Find out more</a>            
                         <a href="#" class="hero__button hero__button--white">Play video</a>  
-                    </div>            
-                   
+                    </div>             
                 </div>
                 <div class="sidebar"> 
                     <ul class="style">
@@ -45,9 +78,8 @@
                         <li  class="sidebar__text "> wild@life.com</li>
                         <li  class="sidebar__text "> +40 070 991 598</li>                   
                     </ul>    
-                   
                 </div>
-            </div>      
+            </div>     
         </section> 
         <section class="mission">
             <h1 class="mission__title">Our Mission</h1>
