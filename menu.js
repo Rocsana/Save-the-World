@@ -9,7 +9,7 @@ function dropMenu () {
 const images = ["./Photos/hero-image 2.png", "./Photos/hero-image 3.png", "./Photos/hero-image 4.png"];
 
 function background (index) {
-    document.getElementById("backgrimg").style.backgroundImage =`url("${images[index]}")`;
+    document.getElementById("backgrimg").style.backgroundImage =`url("${images[index]}")`;  
 }
 
 function openHamb () {
