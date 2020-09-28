@@ -10,53 +10,56 @@
     <body>       
         <section class="hero">
             <div class="hero__navbar">
-                <ul class="hero__navbar--list">
-                    <li ><a href="#" class="hero__navbar--item">Home</a></li>
-                    <li class="hero__navbar--dropdown">
-                        <div class="hero__navbar--item">Story</div>
-                        <div class="hero__dropdown-content">
-                            <a href="#" class="hero__dropdown--line">Team</a>
-                            <a href="#" class="hero__dropdown--line">Project</a>
-                            <a href="#" class="hero__dropdown--line">Future</a>
+                <ul class="navbar__list">
+                    <li ><a href="#" class="navbar__item">Home</a></li>
+                    <li class="navbar__dropdown">
+                        <div class="navbar__item">Story</div>
+                        <div class="dropdown__content">
+                            <a href="#" class="dropdown__link">Team</a>
+                            <a href="#" class="dropdown__link">Project</a>
+                            <a href="#" class="dropdown__link">Future</a>
                         </div>
                     </li>
-                    <li><a href="#" class="hero__navbar--item">Contacte</a></li>
-                    <li><a href="#" class="hero__navbar--item">Lessons</a></li>
-                    <li><a href="#" class="hero__navbar--item">Account</a></li>
+                    <li><a href="#" class="navbar__item">Contacte</a></li>
+                    <li><a href="#" class="navbar__item">Lessons</a></li>
+                    <li><a href="#" class="navbar__item">Account</a></li>
                 </ul>
             </div>  
             <div id="hamb" class="hero__hamburger">
-                <span onclick="openMenu()" class="hero__hamburger--btn" >&#9776;</span> 
-                <ul id="content"  class="hero__hamburger--closed">
-                    <div class="hero__exit--btn">
-                        <div class="hero__hamburger--logo"><img  src="./Photos/Shape.png" alt="Photo of the logo" ></div>
-                        <span onclick="openMenu()">&#9932;</span> 
+                <span onclick="openMen()" class="hamburger__btn" >
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </span> 
+                <ul id="content"  class="hamburger__closed">
+                    <div class="hamburger__exit">
+                        <div class="hamburger__logo"><img  src="./Photos/Shape.png" alt="Photo of the logo" ></div>
                     </div>  
-                    <span class="hero__hamburegr--horizontalbar"></span>
-                    <li class="hero__hamburger--space"><a href="#" class="hero__hamburger--font">Home</a></li>
-                    <li class="hero__hamburger--space"><a href="#" class="hero__hamburger--font">Story</a>
-                        <span onclick="openHamb ()" class="hero__hamburger--arrow" >&#x2935;</span> 
-                        <div id="larger" class="hero__hamburger--none">
-                            <span class="hero__hamburegr--bar"></span>
-                            <a href="#" class="hero__dropdown--min">Team</a>
-                            <a href="#" class="hero__dropdown--min">Project</a>
-                            <a href="#" class="hero__dropdown--min">Future</a>
+                    <span class="hamburger__horizontalbar"></span>
+                    <li class="hamburger__space"><a href="#" class="hamburger__font">Home</a></li>
+                    <li class="hamburger__space"><a href="#" class="hamburger__font">Story</a>
+                        <span onclick="openHamb ()" class="hamburger__arrow" >&#x2935;</span> 
+                        <div id="insideMen" class="hamburger__none">
+                            <span class="hamburegr__bar"></span>
+                            <a href="#" class="hamburger__min">Team</a>
+                            <a href="#" class="hamburger__min">Project</a>
+                            <a href="#" class="hamburger__min">Future</a>
                         </div>
                     </li>
-                    <li class="hero__hamburger--space"><a href="#" class="hero__hamburger--font">Contacte</a></li>
-                    <li class="hero__hamburger--space"><a href="#" class="hero__hamburger--font">Lesssons</a></li>
-                    <li class="hero__hamburger--space"><a href="#" class="hero__hamburger--font">Account</a></li>
+                    <li class="hamburger__space"><a href="#" class="hamburger__font">Contacte</a></li>
+                    <li class="hamburger__space"><a href="#" class="hamburger__font">Lesssons</a></li>
+                    <li class="hamburger__space"><a href="#" class="hamburger__font">Account</a></li>
                 </ul>
             </div>    
             <div class="hero__slidebar">
-                <div id="btn_1" onclick="background(0)" class="hero__slidebar--dot">
-                    <div id="act" class="hero__slidebar--item">1</div>
+                <div onclick="background(0)" class="slidebar__dot">
+                    <div class="slidebar__item">1</div>
                 </div>
-                <div id="btn_2" onclick="background(1)" class="hero__slidebar--dot">
-                    <div id="act" class="hero__slidebar--item">2</div>
+                <div onclick="background(1)" class="slidebar__dot">
+                    <div class="slidebar__item">2</div>
                 </div>
-                <div id="btn_3" onclick="background(2)" class="hero__slidebar--dot">
-                    <div id="act" class="hero__slidebar--item">3</div>
+                <div onclick="background(2)" class="slidebar__dot">
+                    <div class="slidebar__item">3</div>
                 </div>  
             </div>    
             <div id="backgrimg" class="hero__image">
@@ -79,13 +82,13 @@
                         <a href="#" class="hero__button hero__button--green">Find out more</a>            
                         <a href="#" class="hero__button hero__button--white">Play video</a>  
                     </div>     
-                    <span ><a  class="hero__down--arrow" href="#gallery"> &#8595;</a></span>        
+                    <span ><a  class="hero__downarrow" href="#gallery"> &#8595;</a></span>        
                 </div>
                 <div class="hero__sidebar"> 
-                    <ul class="hero__sidebar--apparence">
-                        <li  class="hero__sidebar--text"> Wild Avenue, San Francisco, CA</li>                    
-                        <li  class="hero__sidebar--text"> wild@life.com</li>
-                        <li  class="hero__sidebar--text"> +40 070 991 598</li>                   
+                    <ul class="sidebar__apparence">
+                        <li  class="sidebar__text"> Wild Avenue, San Francisco, CA</li>                    
+                        <li  class="sidebar__text"> wild@life.com</li>
+                        <li  class="sidebar__text"> +40 070 991 598</li>                   
                     </ul>    
                 </div>
             </div>     
@@ -115,7 +118,7 @@
         </section>
         <section id="gallery" class="gallery">
             <div class="gallery__primary">
-                <div class="gallery__primary--description">
+                <div class="primary__description">
                     <span class="gallery__bar"></span>
                     <h2 class="gallery__title"> Wildlife</h2>
                     <p class="gallery__text">
