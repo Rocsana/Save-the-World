@@ -1,4 +1,4 @@
-function openMen(x) {
+function openMen() {
     var el = document.getElementById("hamb");
     el.classList.toggle("change");
     var element = document.getElementById("content");

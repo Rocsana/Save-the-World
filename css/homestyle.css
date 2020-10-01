@@ -931,7 +931,7 @@ ul>li:first-child:after {
         flex-direction: column;
     }
 
-    .hamburger__min{
+    .hamburger__min {
         font-size: 20px;
         padding-top: 20%;
         padding-left: 15%;
@@ -939,7 +939,7 @@ ul>li:first-child:after {
         text-decoration: none;
         text-transform: uppercase;
     }
-
+  
     .hamburger__exit {
         color: #55bba6;
         display: flex;
